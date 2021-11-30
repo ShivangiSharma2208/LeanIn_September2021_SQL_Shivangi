@@ -111,7 +111,7 @@ LIMIT 1;
 SELECT FLOOR((SELECT COUNT(*) from photos)/(SELECT COUNT(*) FROM users)) AS AVG;
 
 #SIXTH TASK
-SELECTtags.id AS tag_id,tags.tag_name,COUNT(*) as total_tags_count
+SELECT tags.id AS tag_id,tags.tag_name,COUNT(*) as total_tags_count
 FROM tags
 JOIN photo_tags
 ON tags.id = photo_tags.tag_id
